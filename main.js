@@ -15,6 +15,27 @@ const password3 = "supToThis"
 
 
 
+function  isValidEmail(typeOf) {
+  var atend1 = typeOf.endsWith(".prsvr@gmail.com");
+  var locat1 = typeOf.lastIndexOf(".prsvr@gmail.com");
+  var atend2 = typeOf.endsWith("@perseverenow.org");
+  var locat2 = typeOf.lastIndexOf("@perseverenow.org");
+
+  if  ((locat1 != ".prsvr@gmail.com") && 
+  (locat2 != "@perseverenow.org") && 
+  (typeOf != ".prsvr@gmail.com") &&
+ (typeOf != "@perseverenow.org") &&
+
+
+  (locat1 != -1 || locat2 != -1 )) {
+       return true
+   } else {
+      return false;
+  }
+}
+
+
+
 // Our code below. Do not touch!
 
 
