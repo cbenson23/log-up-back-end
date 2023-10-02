@@ -76,7 +76,7 @@ describe('isValidPassword', () => {
 
 describe('isRegisteredUser', () => {
   it('returns whether or not the given email is in the "database"', () => {
-    const registeredUser1 = 'krose@persevere.org';
+    const registeredUser1 = 'krose@perseve.org';
     const registeredUser2 = 'jdoty@perseverenow.org';
     const unregisteredUser1 = 'anyone.else@perseverenow.org';
     const unregisteredUser2 = 'i.mean.literally.anyone.prsvr@gmail.com';
