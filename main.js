@@ -66,7 +66,7 @@ function  isValidEmail2(typeOf) {
 
 function isRegisteredUser(str3) {
   if ((str3 === "krose@perseverenow.org") ||
-      (str3 === "krose@perseve.org") ||
+      
       (str3 === "jdoty@perseverenow.org") ||
       (str3 === "dhiggins.prsvr@gmail.com")) {
       return true
