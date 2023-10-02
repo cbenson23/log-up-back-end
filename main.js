@@ -15,7 +15,37 @@ const password3 = "supToThis"
 
 
 
-function  isValidEmail(typeOf) {
+
+function isValidEmail(str)
+ {
+  const str2 = (str.length);
+if (((str.endsWith(".prsvr@gmail.com")) && ((str2>16))) ||
+((str.endsWith("@perseverenow.org")) && (str2>17))) {
+  return true; 
+} else {
+  return false;
+}
+}
+
+
+
+
+const good1="krose@perseverenow.orgHotforhimself"
+const good2="jdoty@perseverenow.orgConsole.logger"
+const good3="dhiggins.prsvr@gmail.comsupToThis"
+function passwordMatches(input1,input2) {
+var tryit=(input1+input2);
+if ((tryit === good1) ||
+ (tryit === good2 ) ||
+ (tryit === good3 )){
+ return true
+} else {
+   return false;
+}
+}
+
+
+function  isValidEmail2(typeOf) {
   var atend1 = typeOf.endsWith(".prsvr@gmail.com");
   var locat1 = typeOf.lastIndexOf(".prsvr@gmail.com");
   var atend2 = typeOf.endsWith("@perseverenow.org");
@@ -25,14 +55,45 @@ function  isValidEmail(typeOf) {
   (locat2 != "@perseverenow.org") && 
   (typeOf != ".prsvr@gmail.com") &&
  (typeOf != "@perseverenow.org") &&
-
-
   (locat1 != -1 || locat2 != -1 )) {
        return true
    } else {
       return false;
   }
 }
+
+
+
+function isRegisteredUser(str3) {
+  if ((str3 === "krose@perseverenow.org") ||
+      (str3 === "krose@perseve.org") ||
+      (str3 === "jdoty@perseverenow.org") ||
+      (str3 === "dhiggins.prsvr@gmail.com")) {
+      return true
+    } else  {
+      return false;
+  }
+}
+
+
+
+function isValidPassword(str) {
+
+const getup = str.toUpperCase()
+const getdown = str.toLowerCase()
+
+if ((str.length>=8) &&
+((str.toLowerCase()) !== (str))  &&
+
+((str.toUpperCase()) !== (str))){
+return true; 
+} else {
+  return false;}
+}
+
+
+
+
 
 
 
