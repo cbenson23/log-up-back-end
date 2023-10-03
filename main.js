@@ -14,8 +14,6 @@ const password3 = "supToThis"
 // **YOUR** code below. Pass those tests!
 
 
-
-
 function isValidEmail(str)
  {
   const str2 = (str.length);
@@ -90,8 +88,6 @@ return true;
 } else {
   return false;}
 }
-
-
 
 
 
